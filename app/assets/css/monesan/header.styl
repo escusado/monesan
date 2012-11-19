@@ -1,0 +1,75 @@
+$topWrapperHeight = 40px;
+
+$titleFont          = $titlesFont;
+$titleFontSize      = 28px;
+$titlePositionLeft  = 70px;
+$titlePositionTop   = -5px;
+$titleFontColor     = #333333;
+$titleFontColorSpan = #9d3ee0;
+
+$logoSizeW = 50px;
+$logoSizeH = 50px;
+$logoPositionLeft = 15px;
+
+
+$infoTabPositionRight = 30px;
+
+$bottomSeparatorSizeH = 10px;
+$bottomSeparatorGradL = #983dff;
+$bottomSeparatorGradC = #a22aff;
+$bottomSeparatorGradR = #4200ff;
+
+.header
+  height: $topWrapperHeight;
+
+  .top-wrapper
+    height  : $topWrapperHeight - $bottomSeparatorSizeH;
+    position: relative;
+    overflow: hidden;
+  
+    box-shadow(0 -1px 0 0 rgba(0, 0, 0, 0.5) inset);
+
+    >div
+      position: absolute;
+
+    .logo
+      height: $logoSizeH;
+      width : $logoSizeW;
+      left  : $logoPositionLeft;
+      top   : 0;
+
+      background: transparent url('/img/logo.png') 0 0 no-repeat;
+
+    .title
+      left      : $titlePositionLeft;
+      top       : $titlePositionTop;
+      font-size : $titleFontSize;
+
+      font-family : $titleFont;
+      color       : $titleFontColor;
+
+      span
+        color : $titleFontColorSpan;
+
+    .info-tab
+      height : 39px;
+      width  : 27px;
+      right  : $infoTabPositionRight;
+      top    : -15px;
+
+      background-color    : transparent;
+      background-position : 0 0;
+
+
+  .bottom-separator
+    width  : 100%;
+    // left   : 0;
+    // bottom : 0;
+    height : $bottomSeparatorSizeH;
+    background: linear-gradient(bottom left, $bottomSeparatorGradL, $bottomSeparatorGradC, $bottomSeparatorGradR);
+    
+    box-shadow(
+     0 0 10px  rgba(0, 0, 0, 0.4)\,
+     0 -1px 0 0 rgba(0, 0, 0, 0.8) inset\,
+     0 1px 0 0 rgba(255, 255, 255, 0.4) inset
+    );

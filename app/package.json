@@ -12,6 +12,7 @@
     "ejs-locals"      : "*",
     "connect-assets"  : "*",
     "stylus"          : "*",
-    "coffee-script"   : "*"
+    "coffee-script"   : "*",
+    "nib"   : "*"
   }
 }

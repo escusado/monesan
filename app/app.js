@@ -13,6 +13,7 @@ var express = require('express')
   , engine  = require('ejs-locals')
   , helpers = require('express-helpers')
   , ejs     = require('ejs')
+  , nib     = require('nib')
 
 var app = express();
 
