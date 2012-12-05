@@ -2,7 +2,11 @@ Class('LayoutManager')({
     setup: (element) ->
         
         #element collection
-        @sidebar = element.find('.sidebar')
+        @sidebar        = {}
+        @sidebar.el     = element.find('.sidebar')
+        @sidebar.header = element.find('.sidebar .header')
+        @sidebar.body   = element.find('.sidebar .body')
+
         @canvas  = element.find('.canvas')
 
         #initial layout
@@ -22,5 +26,6 @@ Class('LayoutManager')({
             w: window.innerWidth
         }
 
-        @sidebar.height( @viewport.h )
+        @sidebar.el.height    ( @viewport.h )
+        @sidebar.body.height  ( @sidebar.el.height() - @sidebar.header.height() )
 })

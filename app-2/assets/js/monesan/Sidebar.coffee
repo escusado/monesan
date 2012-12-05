@@ -10,6 +10,6 @@ Class('Sidebar')({
             @manageScroll(ev)
 
     manageScroll: (ev) ->
-
+        
 
 })

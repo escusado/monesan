@@ -1,3 +1,101 @@
 .sidebar
-    width: $sidebar_w;
-    background-color: $sidebar_bgc;
+  width : $sidebar_w;
+  position : relative;
+  
+  background : $sidebar_bgc url($sidebar_bki) 0 0 repeat;
+  box-shadow(
+    0 0 10px rgba(0, 0, 0, 0.4)\,
+    1px 0 0 0 rgba(0, 0, 0, 0.2)\,
+    -1px 0 0 0 rgba(255, 255, 255, 0.4) inset
+  );
+  
+  .header
+    height : $sidebar_header_h;
+
+    background : $sidebar_header_bgc url($sidebar_header_bi) $sidebar_header_bi_x $sidebar_header_bi_y no-repeat;
+    box-shadow(
+      0 1px 0 0 rgba(255, 255, 255, 0.7)\,
+      0 -1px 0 0 rgba(0, 0, 0, 0.1) inset
+    );
+
+    .title
+      margin : 0;
+      line-height : 0;
+      position : absolute;
+      left: $header_title_x;
+      top: $header_title_y;
+
+      color: $header_title_h1_c;
+      font: $header_title_fw $header_title_fz $header_title_ff;
+      text-shadow: 0 1px rgba(255,255,255,.5);
+
+      span
+        color: $header_title_span_c;
+
+  .body
+
+    .latch
+      width : 21px;
+      height : 30px;
+      position : absolute;
+      top : 200px;
+      right : -20px;
+
+      background : transparent url($sidebar_latch_sp) 0 0 repeat;
+      box-shadow(0 -1px 0 0 rgba(255,255,255,.1));
+
+  .post-titles
+    margin : 0;
+    padding : 0;
+
+    font-family : $sidebar_post_ff;
+
+    li.post
+      list-style : none;
+      text-align : right;
+      position : relative;
+      margin : 50px 0;
+      padding-right : 10px;
+      opacity .6;
+
+      .category
+        color : $sidebar_post_category_c;
+        font-size : $sidebar_post_category_fz;
+
+      .title
+        margin-top : -8px;
+
+        color : $sidebar_post_title_c;
+        font-size : $sidebar_post_title_fz;
+
+      .date
+        margin-top: -6px;
+
+        font-family : $sidebar_post_date_ff;
+        color : $sidebar_post_date_c;
+        font-size : $sidebar_post_date_fz;
+
+      &.selected
+        padding-top : 20px;
+        margin : 10px 0 0 0;
+        opacity 1;
+
+        text-shadow: 0 1px rgba(255,255,255,.8);
+        background: transparent url($sidebar_post_badge_icono) 80% 0 no-repeat;      
+
+        .category
+          color : $sidebar_post_category_c;
+          font-size : $sidebar_post_category_fz*2;
+
+        .title
+          margin-top : -10px;
+
+          color : $sidebar_post_title_c;
+          font-size : $sidebar_post_title_fz*1.5;
+
+        .date
+          margin-top: -8px;
+
+          font-family : $sidebar_post_date_ff;
+          color : $sidebar_post_date_c;
+          font-size : $sidebar_post_date_fz*1.2;
