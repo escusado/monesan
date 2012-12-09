@@ -34,3 +34,45 @@ $sidebar_post_title_c     = #222222;
 $sidebar_post_date_c      = #888888;
 
 $sidebar_post_badge_icono = '/img/badge_icono.png'
+
+$sidebar_scroller_bgc = rgba(0,0,0,.1);
+
+// overwrites
+
+body
+  overflow: hidden;
+
+
+// Scroller overwirute
+.mCSB_container{
+  margin-right : 10px;
+}
+
+.mCustomScrollBox .mCSB_scrollTools{
+  width : 8px;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail{
+  background-color : transparent;  
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  width : 5px;
+  background-color: $sidebar_scroller_bgc;
+  box-shadow(1px 0 0 0 rgba(0,0,0,.1) inset);  
+}
+
+// .nano
+//   .pane
+//     width: 7px;
+    
+//     background: transparent;
+
+//     .slider
+//       background-color: $sidebar_scroller_bgc;
+//       box-shadow(1px 0 0 0 rgba(0,0,0,.1) inset);
+
+// .debug
+//   background-color: rgba(255,145,145,.5);
+//   width : 10px;
+//   height: 10px;

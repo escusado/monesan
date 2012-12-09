@@ -51,51 +51,33 @@
     font-family : $sidebar_post_ff;
 
     li.post
+      width : ($sidebar_w / 2) - 10;
+      float : right;
+      clear: right;
+      position : relative;
+      margin : 20px 0;
+      padding-right : 10px;
+      
       list-style : none;
       text-align : right;
-      position : relative;
-      margin : 50px 0;
-      padding-right : 10px;
       opacity .6;
+
+      transform-origin: 100% 100%;
 
       .category
         color : $sidebar_post_category_c;
         font-size : $sidebar_post_category_fz;
 
       .title
-        margin-top : -8px;
+        margin-top : -5px;
 
         color : $sidebar_post_title_c;
         font-size : $sidebar_post_title_fz;
+        line-height: 27px;
 
       .date
-        margin-top: -6px;
+        margin-top: -5px;
 
         font-family : $sidebar_post_date_ff;
         color : $sidebar_post_date_c;
         font-size : $sidebar_post_date_fz;
-
-      &.selected
-        padding-top : 20px;
-        margin : 10px 0 0 0;
-        opacity 1;
-
-        text-shadow: 0 1px rgba(255,255,255,.8);
-        background: transparent url($sidebar_post_badge_icono) 80% 0 no-repeat;      
-
-        .category
-          color : $sidebar_post_category_c;
-          font-size : $sidebar_post_category_fz*2;
-
-        .title
-          margin-top : -10px;
-
-          color : $sidebar_post_title_c;
-          font-size : $sidebar_post_title_fz*1.5;
-
-        .date
-          margin-top: -8px;
-
-          font-family : $sidebar_post_date_ff;
-          color : $sidebar_post_date_c;
-          font-size : $sidebar_post_date_fz*1.2;

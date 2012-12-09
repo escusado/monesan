@@ -16,6 +16,7 @@
 
 <!-- ******** css ******** -->
 <?- css('lib/reset') ?>
+<?- css('lib/jquery.mCustomScrollbar') ?>
 <?- css('monesan') ?>
 
 
@@ -23,8 +24,11 @@
 
 <!-- Libs -->
 <?- js('lib/jquery') ?>
-<?- js('lib/smartresize') ?>
 <?- js('lib/jquery.mousewheel') ?>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<?- js('lib/jquery.mCustomScrollbar') ?>
+<?- js('lib/jquery.transform2d') ?>
+<?- js('lib/smartresize') ?>
 <?- js('lib/underscore') ?>
 <?- js('lib/neon') ?>
 
@@ -33,6 +37,8 @@
 <!-- monesan -->
 <?- js('monesan/LayoutManager') ?>
 <?- js('monesan/Sidebar') ?>
+<?- js('monesan/SidebarPostTitle') ?>
+
 
 <?- js('MonesanWrapper') ?>
 <?- js('monesan') ?>
